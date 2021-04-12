@@ -2,11 +2,13 @@ package _02_gotta_catchem_all;
 
 public class ExceptionMethods {
 	public static double divide (double d1, double d2) {
-		double quotient = d1/d2;
 		if(d2 == 0.0) {
 			throw new IllegalArgumentException();
 		}
+		double quotient = d1/d2;
 		return quotient;
+
+		
 	}
 	
 	public static String reverseString(String string) {
